@@ -1,0 +1,495 @@
+.principal-container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+  
+.left {
+  flex: 7;
+  padding: 1rem;
+}
+  
+.left section {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+  
+
+.right {
+  flex: 2; 
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+  
+.right aside {
+  padding: 0.5rem;
+  background-color: #195770;
+  border-radius: 5px;
+}
+  
+  
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  .left, .right {
+    flex: 1;
+  }
+}
+
+/*------section one-----------*/
+.section_one{
+  display: flex; 
+  flex-direction: column;
+}
+
+.presentation_card{
+  display: flex; 
+  align-items: center; 
+  padding: 50px 20px;  
+  gap: 5%;
+  justify-content: center;
+  background-image: url('./../../img/presentation_card.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.img_profile {
+  width: 20%; 
+  height: 230px;
+  border-radius: 10%;
+  object-fit: cover;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.presentation_card .principal_info{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  width: 70%;
+}
+
+.presentation_card .principal_info .container_pri_inf{
+  text-align: center; 
+  padding: 10px;
+}
+
+.presentation_card .principal_info .container_pri_inf h2{font-size: 40px;}
+
+.presentation_card .principal_info .container_pri_inf h3{font-size: 20px;margin:10px 0;}
+
+
+.presentation_card .secondary_info{
+  display: flex; 
+  justify-content: space-between; 
+  width: 100%; 
+  padding: 0 15%;
+  background-color: #4B4B4BCC;
+  border-radius: 10px;
+}
+
+.presentation_card .secondary_info i{
+  font-size: 45px;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.presentation_card .secondary_info .linkedin:hover {
+  transform: scale(1.5);
+  color: #0077B5;
+}
+
+.presentation_card .secondary_info .phone:hover {
+  transform: scale(1.5);
+  color: #25D366;
+}
+
+.presentation_card .secondary_info .email:hover {
+  transform: scale(1.5);
+  color: #EA4335;
+}
+
+.presentation_card .secondary_info .map:hover {
+  transform: scale(1.5);
+  color: #34A853;
+}
+
+.presentation_card .secondary_info .github:hover {
+  transform: scale(1.5);
+  color: #00008B;
+}
+
+.presentation_card .experience{
+  padding: 5px; 
+  margin-top: 5px;
+  text-align: center;
+}
+
+.card_profile{
+  background-color: white; 
+  margin-top: 20px;
+  padding: 20px; 
+  text-align: center; 
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card_profile_title{
+  font-size: 25px; 
+  font-weight: bold;
+}
+
+.card_profile_paragraph{
+  margin-top: 10px; 
+  text-align: justify;
+}
+
+@media (max-width: 810px) {
+  .principal-container {
+    width: 95%;
+  }
+
+  .presentation_card{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 5px;  
+  }
+
+  .img_profile {
+    width: 30%; 
+    height: 180px;
+  }
+
+  .presentation_card .secondary_info{
+    padding: 10px;
+  }
+
+  .presentation_card .principal_info .container_pri_inf h2{font-size: 35px;}
+
+  .presentation_card .principal_info .container_pri_inf h3{font-size: 15px;margin:10px 0;}
+
+  .presentation_card .secondary_info i{
+    font-size: 40px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+}
+
+@media (max-width: 412px) {
+  .principal-container {
+    width: 98%;
+  }
+
+  .presentation_card{
+    padding: 8px 3px;  
+  }
+
+  .img_profile {
+    width: 30%; 
+    height: 140px;
+  }
+
+  .presentation_card .principal_info .container_pri_inf h2{font-size: 35px;}
+
+  .presentation_card .principal_info .container_pri_inf h3{font-size: 15px;margin:10px 0;}
+
+  .presentation_card .secondary_info i{
+    font-size: 40px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+}
+
+
+
+/*------section two-----------*/
+.container_sec_inf{
+  padding: 7px; 
+  display: flex; 
+  flex-direction: column;
+}
+
+.experience_title{
+  text-align: center; 
+  font-size: 25px; 
+  font-weight: bold; 
+  margin: 15px 0; 
+  background-color: white; 
+  border-radius: 10px;
+}
+
+.card_experience_company{
+  background-color: white; 
+  border-radius: 5px; 
+  padding: 10px 20px;  
+  border: 1px solid #ccc; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card_title_box{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  margin: 10px 0; 
+  align-items: center;
+}
+
+.card_company{
+  font-weight: bold; 
+  font-size: 20px;
+}
+
+.card_time_main{
+  display: flex;
+  flex-direction: column;
+}
+
+.card_time{
+  background-color: #c8e6c9; 
+  border: 1px solid #a5d6a7; 
+  padding: 5px; 
+  border-radius: 5px; 
+  font-weight: 500;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.functions_performed{
+  background-color: #80808080; 
+  text-align: center; 
+  padding: 7px; 
+  font-weight: 500; 
+  border-radius: 5px;
+}
+
+.funtions_presentation_card{
+  padding: 20px 30px; 
+  border: 1px solid #80808080; 
+  border-radius: 10px;
+}
+
+.sub_title_functions{
+  font-weight: bold;
+}
+
+.card_paragraph{
+  text-align: justify;
+  margin-top: 10px;
+  display: none;
+}
+
+.card_experience_company.active .card_paragraph{
+  display: block;
+}
+
+/*.card_exp_icon {
+  font-size: 1.25rem;
+}*/
+
+.exp-toggle{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  height: 30px;
+  width: 30px;
+  bottom: 15px;
+  right: 30px;
+  background-color: rgb(150, 60, 247);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.exp-toggle:hover{
+  transform: scale(1.05);
+}
+
+.exp-toggle .fa-x {
+  display: none;
+}
+
+.card_experience_company.active .exp-toggle .fa-x{
+  display: block;
+}
+
+.card_experience_company.active .exp-toggle .fa-arrow-down-long{
+  display: none;
+}
+
+.card_experience_company.active .exp-toggle{
+  background-color: #ff0000;
+}
+
+.line_separation{
+  background-color: black;
+  height: 2px; 
+  margin: 30px 0;
+}
+
+@media (max-width: 412px) {
+  .card_title_box{ 
+    flex-direction: column; 
+    margin: 10px 0; 
+  }
+
+  .card_company{
+    margin-bottom: 15px;
+  }
+}
+
+
+/*-------------------aside right-----------------*/
+
+.aside_container{
+  text-align: center;
+}
+
+.title_aside{
+  color: white; 
+  font-weight: bold; 
+  font-size: 30px;
+}
+
+.big_line_separate{
+  background-color: black;
+  height: 2px; 
+  margin: 15px 0;
+}
+
+.small_line_separate{
+  background-color: black;
+  height: 2px; 
+  margin: 10px auto; 
+  width: 50px;
+}
+
+.card_aside{
+  background-color: white; 
+  padding: 5px; 
+  border-radius: 10px;
+}
+
+.document_icon_button{
+  background-color: #4B4B4BCC;
+  width: 80%;
+  border-radius: 10px;
+  margin: auto;
+  padding: 2px;
+}
+
+.document_icon_button:hover{
+  background-color: white;
+  border: 2px solid #195770;
+}
+
+.document_icon{
+  font-size: 30px;
+  color: black;
+}
+
+.sena_logo{
+  width: 80px;
+  height: 80px;
+}
+
+.platzi_logo{
+  width: 140px; 
+  height: 50px; 
+  border-radius: 5px;
+}
+
+.skill_cards{
+  margin-top: 18px;
+  display: flex; 
+  flex-direction: column;
+}
+
+.skill_card_sub_title{
+  color: white;
+}
+
+.skill_card_icon{
+  width: 50px; 
+  height: 50px;
+}
+
+.skill_card_icon_white{
+  width: 50px; 
+  height: 50px; 
+  background-color: white; 
+  border-radius: 8px;
+}
+
+.tw_css{
+  background-color: white;
+  border-radius: 8px;
+  padding: 5px;
+  height: 40px; 
+  width: 120px;
+}
+
+@media (max-width: 412px) {
+  .skill_cards{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 35px;
+  }
+
+  .space_text{
+    margin-left: 60px;
+  }
+
+}
+
+/*-------------------section references-----------------*/
+
+.section_references{
+  padding: 20px;
+  margin: 20px;
+  background-color: white; 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.name_references{
+  font-weight: bold;
+}
+
+@media (max-width: 412px) {
+  .section_references{
+    padding: 10px;
+    margin: 10px; 
+    flex-direction: column; 
+  }
+
+  .section_references h3{
+    margin-bottom: 10px;
+  }
+
+  .ref_one{
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 0 15%;
+  }
+
+  .ref_two{
+    width: 100%;
+    padding: 0 15%;
+  }
+}
