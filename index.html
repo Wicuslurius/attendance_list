@@ -1,38 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Asistencia</title>
-    <link rel="stylesheet" href="./assets/styles/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <div class="nav-logo-container">
-        <img src="./assets/img/logo_cv.png" alt="logo_cv" class="nav-logo"/>
-        <p class="nav-title">Lista de Asistencia</p>
-      </div>
-      <button class="open-menu" id="open"><i class="fa-solid fa-bars" style="color: white;"></i></button>
-      <nav class="nav-bar" id="nav">
-        
-        <button id="close" class="close-menu"><i class="fa-solid fa-x" style="color: white;"></i></button>
-        <ul class="nav-list">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="./views/contact.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="principal-container">
 
-    </main>
-    <footer class="footer_container">
-      <p style="margin: 30px 0;">© 2025 - Todos los derechos reservados</p>
-    </footer>
-    <script type="text/javascript" src="./assets/javascript/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Asistencia</title>
+  <link rel="stylesheet" href="./assets/styles/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="nav-logo-container">
+      <img src="./assets/img/logo_cv.png" alt="logo_cv" class="nav-logo" />
+      <p class="nav-title">L.A</p>
+    </div>
+    <button class="open-menu" id="open"><i class="fa-solid fa-bars" style="color: white;"></i></button>
+    <nav class="nav-bar" id="nav">
+
+      <button id="close" class="close-menu"><i class="fa-solid fa-x" style="color: white;"></i></button>
+      <ul class="nav-list">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="./views/contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="principal-container">
+    <section class="hero-section">
+      <h2 class="hero-title">L.A</h2>
+      <div style="width: 100%; display: flex; justify-content: right;">
+        <div class="hero-sub-title">
+          <h3>Simplifica tu toma de asistencia en reuniones</h3>
+          <p>Con L.A automatiza el registro de asistencia mediante códigos QR, evita el desorden y obtén reportes en
+            segundos.</p>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; width: 30%; margin: 0 auto; margin-bottom: 50px;">
+        <p style="color: white; font-size: 30px; font-weight: 500; text-align: center;">¡Pruébalo gratis!</p>
+        <button
+          style="background-color: green; border-radius: 15px; padding: 15px 5px; text-align: center; width: 80%; margin: 0 auto; color: white; font-size: 20px; font-weight: 400;">Ver
+          cómo funciona</button>
+      </div>
+    </section>
+    <section style="padding: 10px;">
+      <div>
+        <h3 style="text-align: center; font-size: 30px; font-weight: 500;">¿Cómo funciona?</h3>
+      </div>
+      <div style="display: flex; padding: 10px; background-color: white; border-radius: 15px; justify-content: space-between;">
+        <div style="border-radius: 15px; border: 1px solid black; padding: 10px; text-align: center; width: 23%;">
+          <p>Paso 1:</p>
+          <div style="width: 90%; height: 200px; background-color: blueviolet; margin: 30px auto; border-radius: 15px;"></div>
+          <p>(Imagen de una interfaz donde se llenan campos: fecha, hora, invitados)</p>
+          <p>Crea tu reunión en segundos</p>
+        </div>
+        <div style="border-radius: 15px; border: 1px solid black; padding: 10px; text-align: center; width: 23%;">
+          <p>Paso 2:</p>
+          <div style="width: 90%; height: 200px; background-color: blueviolet; margin: 30px auto; border-radius: 15px;"></div>
+          <p>(Imagen de un QR en una notificación o correo)</p>
+          <p>Tus invitados reciben un código QR</p>
+        </div>
+        <div style="border-radius: 15px; border: 1px solid black; padding: 10px; text-align: center; width: 23%;">
+          <p>Paso 3:</p>
+          <div style="width: 90%; height: 200px; background-color: blueviolet; margin: 30px auto; border-radius: 15px;"></div>
+          <p>(Imagen del organizador escaneando con un celular y viendo cédula)</p>
+          <p>Escanea, verifica y confirma</p>
+        </div>
+        <div style="border-radius: 15px; border: 1px solid black; padding: 10px; text-align: center; width: 23%;">
+          <p>Paso 4:</p>
+          <div style="width: 90%; height: 200px; background-color: blueviolet; margin: 30px auto; border-radius: 15px;"></div>
+          <p>(Imagen de una tabla o gráfica con check-ins y datos de asistencia)</p>
+          <p>Visualiza asistencia en tiempo real</p>
+        </div>
+      </div>
+    </section>
+    <br>
+    <section style="padding: 10px;">
+      <div>
+        <h3 style="text-align: center; font-size: 30px; font-weight: 500;">Beneficios principales</h3>
+      </div>
+      <div style="width: 80%; margin: 0 auto;">
+        <ul style="margin: 30px 0;">
+          <li style="display: flex; padding: 10px; align-items: center; justify-content: space-around;">
+            <p style="font-size: 25px;"> Elimina listas manuales</p>
+            <div style="width: 100px; height: 100px; background-color: aqua;"></div>
+          </li>
+          <li style="display: flex; padding: 10px; align-items: center; justify-content: space-around;">
+            <p style="font-size: 25px;">Seguridad en la verificación de identidad</p>
+            <div style="width: 100px; height: 100px; background-color: aqua;"></div>
+          </li>
+          <li style="display: flex; padding: 10px; align-items: center; justify-content: space-around;">
+            <p style="font-size: 25px;">Control total desde tu celular</p>
+            <div style="width: 100px; height: 100px; background-color: aqua;"></div>
+          </li>
+          <li style="display: flex; padding: 10px; align-items: center; justify-content: space-around;">
+            <p style="font-size: 25px;">Reportes listos para descargar</p>
+            <div style="width: 100px; height: 100px; background-color: aqua;"></div>
+          </li>
+          <li style="display: flex; padding: 10px; align-items: center; justify-content: space-around;">
+            <p style="font-size: 25px;">Ideal para empresas, capacitaciones, universidades y eventos</p>
+            <div style="width: 100px; height: 100px; background-color: aqua;"></div>
+          </li>
+        </ul>
+      </div>
+      <p>(Con íconos o imágenes representativas)</p>
+    </section>
+    <section style="padding: 10px;">
+      <h3 style="text-align: center; font-size: 30px; font-weight: 500;">Testimonios</h3>
+      <div>
+        <div style="display: flex; padding: 15px; align-items: center; border-radius: 200px; border: 1px solid black; margin-top: 20px;">
+          <div style="width: 30%; display: flex; justify-content: center; ">
+            <p style="width: 100px; height: 100px; background-color: aqua; border-radius: 5px;">imagen</p>
+          </div>
+          <div style="width: 70%;">
+            <p>“Desde que usamos L.A, las reuniones de la empresa son más organizadas y tenemos control total de
+              asistencia.”</p>
+            <p>Laura Gómez, Coordinadora de Eventos</p>
+          </div>
+        </div>
+        <div style="display: flex; padding: 15px; align-items: center; border-radius: 200px; border: 1px solid black; margin-top: 20px;">
+          <div style="width: 30%; display: flex; justify-content: center; ">
+            <p style="width: 100px; height: 100px; background-color: aqua; border-radius: 5px;">imagen</p>
+          </div>
+          <div style="width: 70%;">
+            <p>“Desde que usamos L.A, las reuniones de la empresa son más organizadas y tenemos control total de
+              asistencia.”</p>
+            <p>Laura Gómez, Coordinadora de Eventos</p>
+          </div>
+        </div>
+        <div style="display: flex; padding: 15px; align-items: center; border-radius: 200px; border: 1px solid black; margin-top: 20px;">
+          <div style="width: 30%; display: flex; justify-content: center; ">
+            <p style="width: 100px; height: 100px; background-color: aqua; border-radius: 5px;">imagen</p>
+          </div>
+          <div style="width: 70%;">
+            <p>“Desde que usamos L.A, las reuniones de la empresa son más organizadas y tenemos control total de
+              asistencia.”</p>
+            <p>Laura Gómez, Coordinadora de Eventos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="padding: 15px;">
+      <h3 style="text-align: center; font-size: 30px; font-weight: 500;">Planes y precios</h3>
+      <div style="display: flex; padding: 10px; background-color: white; border-radius: 15px; justify-content: space-around;">
+        <div style="border: 1px solid black; border-radius: 10px; width: 30%; height: 450x;">
+          <p>Plan #1</p>
+        </div>
+        <div style="border: 1px solid black; border-radius: 10px; width: 30%; height: 450px;">
+          <p>Plan #2</p>
+        </div>
+        <div style="border: 1px solid black; border-radius: 10px; width: 30%; height: 450px;">
+          <p>Plan #3</p>
+        </div>
+      </div>
+      <p>Objetivo: Mostrar que es accesible y escalable.</p>
+      <p>(3 columnas con precios por uso o por usuarios, incluyendo plan gratuito si hay)</p>
+    </section>
+    <section>
+      <h3>Preguntas frecuentes (FAQ)</h3>
+      <div>
+        <div>
+          <p>¿Cómo se verifica la identidad?</p>
+        </div>
+                <div>
+          <p>¿Qué pasa si alguien olvida su QR?</p>
+        </div>
+                <div>
+          <p>¿Puedo ver los datos en Excel?</p>
+        </div>
+                        <div>
+          <p>¿Se puede integrar con otras plataformas?</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer_container">
+    <p>Información de contacto</p>
+    <p>Redes sociales</p>
+    <p>Enlaces legales (política de privacidad, términos)</p>
+    <p>Botón de descarga si es app móvil</p>
+    <p style="margin: 30px 0;">© 2025 - Todos los derechos reservados</p>
+  </footer>
+  <script type="text/javascript" src="./assets/javascript/main.js"></script>
+</body>
+
 </html>
